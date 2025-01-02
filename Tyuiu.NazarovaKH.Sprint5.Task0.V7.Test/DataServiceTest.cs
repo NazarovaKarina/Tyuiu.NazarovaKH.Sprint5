@@ -10,11 +10,11 @@ namespace Tyuiu.NazarovaKH.Sprint5.Task0.V7.Test
         {
             DataService ds = new DataService();
 
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
-            FileInfo fl = new FileInfo(path);
-            bool fle = fl.Exists;
-            bool wait = false;
-            Assert.AreEqual(wait, fle);
+            string path = @"C:\Users\гыук\source\repos\Tyuiu.NazarovaKH.Sprint5\Tyuiu.NazarovaKH.Sprint5.Task0.V7\bin\Debug\net8.0\OutPutFileTask0.txt";
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExists);
         }
     }
 }
